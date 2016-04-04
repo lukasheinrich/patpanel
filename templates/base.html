@@ -1,0 +1,79 @@
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/static/components/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="static/components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/static/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- MP3 Player -->
+    <script src="/static/components/SoundManager2/script/soundmanager2.js"></script>
+
+    <script>
+    var ready;
+    soundManager.setup({
+        onready: function(){
+            ready = true;      
+        }
+    });
+    
+    function play(soundfile){
+        var mySound = soundManager.createSound({
+          url: soundfile
+        });
+        if(ready){
+            mySound.play();
+            console.log("playing "+ soundfile)
+        }
+    }
+    
+    $(document).ready(function(){
+    }
+        
+    )
+    // create "mySound"...
+    </script>
+    
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+.soundcell{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    background-color: goldenrod;
+    height: 200px;
+    vertical-align: middle!important;
+}
+.soundcell:hover{
+    background-color: steelblue;
+}
+</style>
+
+</head>
+
+<body>
+
+<table class="table table-bordered">
+  <tr>
+
+  {% for x in data %}
+    <td class="text-center soundcell" onclick="play('{{x['soundfile']}}')">
+        {{x['text']}}
+    </td>
+    {% if not loop.index % 4 %}
+  </tr>
+  <tr>
+    {% endif %}
+  {% endfor %}
+  </tr>
+
+</table>
+
+</body>
+</html>
