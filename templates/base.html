@@ -43,10 +43,25 @@
 
 <style type="text/css" media="screen">
 
+body{
+    background-color: #333;
+}
+
+.thetable{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.thetable .thecell{
+    border-color: #333;
+}
+
 .soundcell{
     font-family: 'Lobster', cursive;
     font-size: 30px;
     background-color: goldenrod;
+    color: #333;
     height: 200px;
     vertical-align: middle!important;
 }
@@ -59,11 +74,11 @@
 
 <body>
 
-<table class="table table-bordered">
+<table class="table table-bordered thetable">
   <tr>
 
   {% for x in data %}
-    <td class="text-center soundcell" onclick="play('{{x['soundfile']}}')">
+    <td class="text-center soundcell thecell" onclick="play('{{x['soundfile']}}')">
         {{x['text']}}
     </td>
     {% if not loop.index % 4 %}
