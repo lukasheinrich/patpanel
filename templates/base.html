@@ -12,28 +12,14 @@
     <script src="/static/components/SoundManager2/script/soundmanager2.js"></script>
 
     <script>
-    var ready;
+    sounds = {};
     soundManager.setup({
         onready: function(){
-            ready = true;      
+            {% for x in data %}
+                sounds["{{x['soundfile']}}"] = soundManager.createSound({url: "{{x['soundfile']}}"});
+            {% endfor %}
         }
     });
-    
-    function play(soundfile){
-        var mySound = soundManager.createSound({
-          url: soundfile
-        });
-        if(ready){
-            mySound.play();
-            console.log("playing "+ soundfile)
-        }
-    }
-    
-    $(document).ready(function(){
-    }
-        
-    )
-    // create "mySound"...
     </script>
     
 
@@ -78,7 +64,7 @@ body{
   <tr>
 
   {% for x in data %}
-    <td class="text-center soundcell thecell" onclick="play('{{x['soundfile']}}')">
+    <td class="text-center soundcell thecell" onclick="sounds['{{x['soundfile']}}'].play()">
         {{x['text']}}
     </td>
     {% if not loop.index % 4 %}
