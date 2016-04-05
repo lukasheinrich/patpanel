@@ -1,34 +1,37 @@
 - text: 'Füße hoch, der kommt flach.'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/fuessehoch.m4a
 - text: 'Eins geht nur, klingeln oder fahradfahren.'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/einsgehtnur.m4a
 - text: 'Ich verabscheue mich'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/verabscheue.m4a
 - text: 'einmal mit profis arbeiten, einmal nur'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/einmalprofis.m4a
 - text: 'Was willste machen, schießen darfste nicht.'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/schiessendarfstenich.m4a
 - text: 'Einziger ICE Halt in Brandenburg'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/icehalt.m4a
 - text: 'So Kinners'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/sokinners.m4a
 - text: 'ich wollt was trinken und mich nicht waschen'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/trinken_nicht_waschen.m4a
 - text: 'ramontisch'
-  soundfile: static/sounds/test.m4a
-- text: 'der appetit kommt beim essen'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/ramontisch.m4a
+- text: 'Sehr schöne Landschaft... landschaftlich gesehen'
+  soundfile: static/sounds/landschaft.m4a
 - text: 'wir hatten ja nix und selbst da mussten wir sparn'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/hattennischt.m4a
 - text: 'Wer sich erinnert, war nicht dabei'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/erinnert.m4a
 - text: 'Größte freistehende Turmuhr Festlandeuropas'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/turmuhr.m4a
 - text: 'WittenberGE'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/wittenberge.m4a
 - text: 'Ja wir haben ein Idol...'
-  soundfile: static/sounds/test.m4a
-- text: 'Nur unter Druck entstehen Diamanten'
-  soundfile: static/sounds/test.m4a
+  soundfile: static/sounds/einidol.m4a
+# - text: 'Nur unter Druck entstehen Diamanten'
+#   soundfile: static/sounds/test.m4a
+- text: "Wer 'so' sagt, hat den ganzen tag noch nicht gearbeitet"
+  soundfile: static/sounds/wersosagt.m4a
+
 
 
