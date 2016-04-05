@@ -28,13 +28,13 @@
             
                 sounds["static/sounds/icehalt.m4a"] = soundManager.createSound({url: "static/sounds/icehalt.m4a"});
             
-                sounds["static/sounds/sokinners.m4a"] = soundManager.createSound({url: "static/sounds/sokinners.m4a"});
+                sounds["static/sounds/verstehDieFrageNicht.mp3"] = soundManager.createSound({url: "static/sounds/verstehDieFrageNicht.mp3"});
             
                 sounds["static/sounds/trinken_nicht_waschen.m4a"] = soundManager.createSound({url: "static/sounds/trinken_nicht_waschen.m4a"});
             
                 sounds["static/sounds/ramontisch.m4a"] = soundManager.createSound({url: "static/sounds/ramontisch.m4a"});
             
-                sounds["static/sounds/landschaft.m4a"] = soundManager.createSound({url: "static/sounds/landschaft.m4a"});
+                sounds["static/sounds/landschaft.mp3"] = soundManager.createSound({url: "static/sounds/landschaft.mp3"});
             
                 sounds["static/sounds/hattennischt.m4a"] = soundManager.createSound({url: "static/sounds/hattennischt.m4a"});
             
@@ -64,10 +64,9 @@ body{
 }
 
 .thetable{
-/*    position: relative;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
-*/
 }
 
 .thetable .thecell{
@@ -128,8 +127,8 @@ body{
     </td>
     
   
-    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/sokinners.m4a'].play()">
-        So Kinners
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/verstehDieFrageNicht.mp3'].play()">
+        Ich versteh die Frage nicht
     </td>
     
   
@@ -146,8 +145,8 @@ body{
     </td>
     
   
-    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/landschaft.m4a'].play()">
-        Sehr schöne Landschaft... landschaftlich gesehen
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/landschaft.mp3'].play()">
+        Landschaftlich schöne Landschaft... landschaftlich gesehen
     </td>
     
   
