@@ -1,0 +1,194 @@
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/static/components/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="static/components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="/static/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- MP3 Player -->
+    <script src="/static/components/SoundManager2/script/soundmanager2.js"></script>
+
+    <script>
+    sounds = {};
+    soundManager.setup({
+        onready: function(){
+            
+                sounds["static/sounds/fuessehoch.m4a"] = soundManager.createSound({url: "static/sounds/fuessehoch.m4a"});
+            
+                sounds["static/sounds/einsgehtnur.m4a"] = soundManager.createSound({url: "static/sounds/einsgehtnur.m4a"});
+            
+                sounds["static/sounds/verabscheue.m4a"] = soundManager.createSound({url: "static/sounds/verabscheue.m4a"});
+            
+                sounds["static/sounds/einmalprofis.m4a"] = soundManager.createSound({url: "static/sounds/einmalprofis.m4a"});
+            
+                sounds["static/sounds/schiessendarfstenich.m4a"] = soundManager.createSound({url: "static/sounds/schiessendarfstenich.m4a"});
+            
+                sounds["static/sounds/icehalt.m4a"] = soundManager.createSound({url: "static/sounds/icehalt.m4a"});
+            
+                sounds["static/sounds/sokinners.m4a"] = soundManager.createSound({url: "static/sounds/sokinners.m4a"});
+            
+                sounds["static/sounds/trinken_nicht_waschen.m4a"] = soundManager.createSound({url: "static/sounds/trinken_nicht_waschen.m4a"});
+            
+                sounds["static/sounds/ramontisch.m4a"] = soundManager.createSound({url: "static/sounds/ramontisch.m4a"});
+            
+                sounds["static/sounds/landschaft.m4a"] = soundManager.createSound({url: "static/sounds/landschaft.m4a"});
+            
+                sounds["static/sounds/hattennischt.m4a"] = soundManager.createSound({url: "static/sounds/hattennischt.m4a"});
+            
+                sounds["static/sounds/erinnert.m4a"] = soundManager.createSound({url: "static/sounds/erinnert.m4a"});
+            
+                sounds["static/sounds/turmuhr.m4a"] = soundManager.createSound({url: "static/sounds/turmuhr.m4a"});
+            
+                sounds["static/sounds/wittenberge.m4a"] = soundManager.createSound({url: "static/sounds/wittenberge.m4a"});
+            
+                sounds["static/sounds/einidol.m4a"] = soundManager.createSound({url: "static/sounds/einidol.m4a"});
+            
+                sounds["static/sounds/wersosagt.m4a"] = soundManager.createSound({url: "static/sounds/wersosagt.m4a"});
+            
+        }
+    });
+    </script>
+    
+
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css" media="screen">
+
+body{
+    background-color: goldenrod;
+}
+
+.thetable{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.thetable .thecell{
+    border-color: #333;
+}
+
+.soundcell{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    background-color: goldenrod;
+    color: #333;
+    height: 200px;
+    vertical-align: middle!important;
+}
+.soundcell:hover{
+    background-color: steelblue;
+}
+</style>
+
+</head>
+
+<body>
+
+<table class="table table-bordered thetable">
+  <tr>
+
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/fuessehoch.m4a'].play()">
+        Füße hoch, der kommt flach.
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/einsgehtnur.m4a'].play()">
+        Eins geht nur, klingeln oder fahradfahren.
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/verabscheue.m4a'].play()">
+        Ich verabscheue mich
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/einmalprofis.m4a'].play()">
+        einmal mit profis arbeiten, einmal nur
+    </td>
+    
+  </tr>
+  <tr>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/schiessendarfstenich.m4a'].play()">
+        Was willste machen, schießen darfste nicht.
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/icehalt.m4a'].play()">
+        Einziger ICE Halt in Brandenburg
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/sokinners.m4a'].play()">
+        So Kinners
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/trinken_nicht_waschen.m4a'].play()">
+        ich wollt was trinken und mich nicht waschen
+    </td>
+    
+  </tr>
+  <tr>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/ramontisch.m4a'].play()">
+        ramontisch
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/landschaft.m4a'].play()">
+        Sehr schöne Landschaft... landschaftlich gesehen
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/hattennischt.m4a'].play()">
+        wir hatten ja nix und selbst da mussten wir sparn
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/erinnert.m4a'].play()">
+        Wer sich erinnert, war nicht dabei
+    </td>
+    
+  </tr>
+  <tr>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/turmuhr.m4a'].play()">
+        Größte freistehende Turmuhr Festlandeuropas
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/wittenberge.m4a'].play()">
+        WittenberGE
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/einidol.m4a'].play()">
+        Ja wir haben ein Idol...
+    </td>
+    
+  
+    <td class="text-center soundcell thecell" onclick="sounds['static/sounds/wersosagt.m4a'].play()">
+        Wer &#39;so&#39; sagt, hat den ganzen tag noch nicht gearbeitet
+    </td>
+    
+  </tr>
+  <tr>
+    
+  
+  </tr>
+
+</table>
+
+</body>
+</html>
