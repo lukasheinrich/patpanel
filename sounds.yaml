@@ -10,14 +10,14 @@
   soundfile: static/sounds/schiessendarfstenich.m4a
 - text: 'Einziger ICE Halt in Brandenburg'
   soundfile: static/sounds/icehalt.m4a
-- text: 'So Kinners'
-  soundfile: static/sounds/sokinners.m4a
+- text: 'Ich versteh die Frage nicht'
+  soundfile: static/sounds/verstehDieFrageNicht.mp3
 - text: 'ich wollt was trinken und mich nicht waschen'
   soundfile: static/sounds/trinken_nicht_waschen.m4a
 - text: 'ramontisch'
   soundfile: static/sounds/ramontisch.m4a
-- text: 'Sehr schöne Landschaft... landschaftlich gesehen'
-  soundfile: static/sounds/landschaft.m4a
+- text: 'Landschaftlich schöne Landschaft... landschaftlich gesehen'
+  soundfile: static/sounds/landschaft.mp3
 - text: 'wir hatten ja nix und selbst da mussten wir sparn'
   soundfile: static/sounds/hattennischt.m4a
 - text: 'Wer sich erinnert, war nicht dabei'
